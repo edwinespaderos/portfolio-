@@ -5,7 +5,9 @@
   padding: 0;
   vertical-align: top;
 }
-
+a{
+  text-decoration: none;
+}
 .container{
     max-width: 960px;
 }
@@ -86,7 +88,7 @@ span {
 .about {
   background: #95d3de;
   color: #FFF;
-  padding: 30px;
+  padding: 50px;
 
 }
 
@@ -143,52 +145,37 @@ span {
 
 
 .nav-display{
-    visibility: hidden;
-    position: fixed;
-    text-align: center;
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.59);
-    color: rgba(104, 104, 104, 0.71);
-    margin: 80px 15px 15px;
-    // @include border-radius(8px);
+  visibility: hidden;
+  position: fixed;
+  text-align: center;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.59);
+  color: rgba(104, 104, 104, 0.71);
+  margin: 75px 15px 15px;
+  @include border-radius(5px);
 
-    ul{
-        list-style: none;
-        list-style-type: none;
+  ul{
+    list-style: none;
+    list-style-type: none;
 
-        li{ 
-            padding: 10px;
+    li{ 
+      padding: 10px;
+      text-align: left;
+      text-decoration: none;
+      
+      a{
+        color: rgba(104, 104, 104, 0.71);
+      }
 
-
-            a, 
-            i{
-                display: block;
-            }
-
-            a{
-                color: rgba(104, 104, 104, 0.71);
-
-                &:visited   {
-                    color: rgba(104, 104, 104, 0.71);
-                }
-            }
-
-            &:hover{
-                background: rgba(104, 104, 104, 0.71);
-            }
-
-            i{
-                margin-top: 5px;
-            }
-
-            // &:first-child{
-            //     @include border-radius(8px 8px 0 0);
-            // }
-
-            // &:last-child{
-            //     border: none;
-            //     @include border-radius(0 0 8px 8px);
-            // }
-        }
+      a:hover {
+        color: #FFF;
+      }
+     
+      &:hover{
+        background: rgba(104, 104, 104, 0.71);
+        
+      }
+  
     }
+  }
 }
